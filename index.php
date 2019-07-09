@@ -68,7 +68,23 @@
 </head>
 
 <body>
-	
+
+    <?php
+
+    session_start();
+
+     $password = $_SESSION["password"];
+    
+     if($password==false){
+ 
+    }
+   else
+    {
+    header("location:login.php");
+    } 
+
+    ?>
+    
 	
 	
 
